@@ -1,0 +1,17 @@
+@use "../../tools/tools" as *;
+
+// ** RULES **//
+
+@layer basic {
+	.project-version {
+		display: flex;
+		flex-direction: column;
+
+		margin-left: auto;
+
+		padding: calc($rem / 2);
+
+		border-top: $header-border;
+		border-bottom: $header-border;
+	}
+}

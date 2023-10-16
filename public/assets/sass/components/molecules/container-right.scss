@@ -1,0 +1,52 @@
+@use "../../tools/tools" as *;
+
+// # **RULES**
+
+@layer basic {
+	.container-right {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		gap: calc($rem * 2);
+
+		padding: calc($rem * 2) calc($rem * 11);
+	}
+
+	.container-right h1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.container-right > p {
+		margin-top: calc($rem);
+
+		font-size: 15px;
+
+		text-align: center;
+
+		opacity: 0.66;
+	}
+
+	.container-cta {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		width: 100%;
+		margin-top: 158px;
+	}
+
+	.container-cta button:nth-child(1) {
+		width: 250px;
+
+		color: var(--color-primary);
+
+		background-color: var(--color-white);
+	}
+
+	.container-cta button:nth-child(2) {
+		width: 175px;
+	}
+}

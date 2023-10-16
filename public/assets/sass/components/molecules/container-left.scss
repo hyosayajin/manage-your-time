@@ -1,0 +1,31 @@
+@use "../../tools/tools" as *;
+
+// # **RULES**
+
+@layer basic {
+	.container-left {
+		flex-shrink: 0;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		width: 524px;
+
+		padding: calc($rem * 2);
+
+		color: var(--color-primary);
+
+		background-color: var(--color-white);
+	}
+
+	.container-left > p {
+		width: var(--300px);
+
+		margin-top: calc($rem * 4);
+
+		font-size: 12px;
+
+		text-align: center;
+	}
+}

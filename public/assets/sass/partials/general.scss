@@ -1,0 +1,44 @@
+@use "../tools/tools" as *;
+
+// # **RULES**
+
+@layer basic {
+	.body {
+		// &.colorWhite {
+		// 	--color-glass: var(--shadow);
+
+		// 	color: var(--color-black);
+		// 	background-color: hsl(0, 0%, 100%);
+		// }
+
+		&.colorBlack {
+			background-color: hsl(0, 0%, 0%);
+		}
+	}
+
+	.app {
+		display: flex;
+		flex-direction: column;
+
+		min-height: 100vh;
+		max-width: 95%;
+
+		margin: auto;
+
+		padding-top: calc($rem * 2);
+		padding-bottom: calc($rem * 2);
+	}
+
+	.main-container {
+		max-width: 1500px;
+
+		max-height: 843px;
+
+		margin: auto;
+
+		border: $header-border;
+		border-radius: $radius;
+
+		padding: calc($rem * 2);
+	}
+}

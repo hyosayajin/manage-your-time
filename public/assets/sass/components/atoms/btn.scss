@@ -1,0 +1,47 @@
+@use "../../tools/tools" as *;
+
+// ** RULES **//
+
+@layer basic {
+	button,
+	.button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		min-width: calc($rem * 3);
+		// max-width: 250px;
+
+		min-height: calc($rem * 3);
+
+		// border-radius: 4px;
+		border: 1px solid gray;
+		
+		font-family: inherit;
+		font-weight: 800;
+
+		text-transform: capitalize;
+
+		color: inherit;
+
+		background-color: var(--color-glass);
+
+		backdrop-filter: blur(15px);
+
+		outline: 2px solid transparent;
+
+		transition: 400ms;
+
+		&.active {
+			outline: 1px solid green;
+		}
+	}
+
+	.trigger-btn {
+		font-size: calc($rem * 1.5);
+	}
+
+	.ops-button.active {
+		background-color: rgba(0, 128, 0, 0.4);
+	}
+}

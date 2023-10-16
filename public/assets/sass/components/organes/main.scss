@@ -1,0 +1,9 @@
+@use "../../tools/tools" as *;
+
+// ** RULES **//
+@layer basic {
+	.main {
+		display: flex;
+		justify-content: center;
+	}
+}

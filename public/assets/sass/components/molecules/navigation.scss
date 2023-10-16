@@ -1,0 +1,35 @@
+@use "../../tools/tools" as *;
+
+// ** RULES **//
+
+@layer basic {
+	.header-navigation {
+		border-bottom: $header-border;
+	}
+
+	.header-navigation ul {
+		display: flex;
+		align-items: center;
+		gap: calc($rem * 2);
+
+		min-width: fit-content;
+		max-width: 1200px;
+
+		width: 75vw;
+
+		height: calc($rem * 3);
+
+		padding-left: calc($rem * 2);
+		padding-right: calc($rem * 2);
+	}
+
+	.header-navigation li {
+		> a {
+			display: inline-block;
+
+			&::first-letter {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
